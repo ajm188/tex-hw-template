@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx} % \includegraphics...
+
+% argmin, argmax
+% Usage: $\argmin_{x} f\paren{x}$ (see below for \paren)
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+% Brackets of various kinds
+% abrack => "angle brackets"
+% paren  => "parentheses"
+% sbrack => "square brackets"
+\newcommand{\abrack}[1]{\left<#1\right>}
+\newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\sbrack}[1]{\left[#1\right]}
+
+% Expected value
+\newcommand{\expect}[1]{E\sbrack{#1}}
+
+% amsthm does not have a \begin{claim} for some reason
+\newtheorem{claim}{Claim}
+
+\title{YourTitleGoesHere}
+\author{YourNameGoesHere}
+
+\begin{document}
+\maketitle
+
+% Your content goes here
+
+\end{document}
